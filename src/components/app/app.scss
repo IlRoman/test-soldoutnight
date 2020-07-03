@@ -47,16 +47,22 @@
         text-align: center;
         line-height: 71px;
         border-bottom: 1px solid #e9edf3;
-    }
-}
 
-.active {
-    border-bottom: 2px solid #61dbb4;
+        &_active {
+            border-bottom: 2px solid #61dbb4;
+        }
+    }
 }
 
 .link {
     text-decoration: none;
-    color: black;
+    color: #b0b3c2;
+    font-weight: 450;
+    font-size: 16px;
+
+    &_active {
+        color: black;
+    }
 }
 
 .popup-wrapper {
