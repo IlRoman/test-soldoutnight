@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Link, useLocation } from 'react-router-dom';
+import { Route, Link, useLocation, Redirect } from 'react-router-dom';
 import './app.scss';
 import TravelDocuments from '../travel-documents/TravelDocuments'
 import Popup from '../popup/Popup'
@@ -33,10 +33,10 @@ const App = () => {
                 <div className="navigation-wrapper">
                     <div className="navigation">
                         <div
-                            className={location.pathname === '/' ? "navigation__item active" : "navigation__item"}
+                            className={location.pathname === '/travel-documents' ? "navigation__item active" : "navigation__item"}
                         >
                             <Link
-                                to="/"
+                                to="/travel-documents"
                                 className="link"
                             >
                                 Travel Documents
@@ -46,7 +46,7 @@ const App = () => {
                             className={location.pathname === '/loyalty-programs' ? "navigation__item active" : "navigation__item"}
                         >
                             <Link
-                                to={popupIsOpened ? '/' : "/loyalty-programs"}
+                                to={popupIsOpened ? '/travel-documents' : "/loyalty-programs"}
                                 className="link"
                             >
                                 Loyalty Programs
@@ -56,7 +56,7 @@ const App = () => {
                             className={location.pathname === '/travel-preferences' ? "navigation__item active" : "navigation__item"}
                         >
                             <Link
-                                to={popupIsOpened ? '/' : "/travel-preferences"}
+                                to={popupIsOpened ? '/travel-documents' : "/travel-preferences"}
                                 className="link"
                             >
                                 Travel Preferences
@@ -64,6 +64,9 @@ const App = () => {
                         </div>
                     </div>
                     <Route exact path="/">
+                        <Redirect to="/travel-documents" />
+                    </Route>
+                    <Route path="/travel-documents">
                         <TravelDocuments
                             setPopup={setPopup}
                         />
