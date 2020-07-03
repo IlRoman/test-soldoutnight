@@ -1,5 +1,5 @@
 .popup {
-    position: absolute;
+    position: fixed;
     width: 710px;
     height: 432px;
     background-color: white;
@@ -22,7 +22,7 @@
         color: #292949;
     }
 
-    &__close {
+    &__close-button {
         font-size: 1.5em;
         line-height: 14px;
         text-align: center;
@@ -42,7 +42,7 @@
         align-items: center;
     }
 
-    &__input-item {
+    &__input-container {
         width: 290px;
         height: 42px;
         border: 1px solid #e3e7ed;
@@ -68,8 +68,6 @@
         cursor: pointer;
         margin-top: 39px;
         height: 50px;
-
-        font-family: Circular Std;
         font-weight: 500;
         font-size: 16px;
         color: #ffffff;
