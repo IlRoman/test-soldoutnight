@@ -1,0 +1,78 @@
+.popup {
+    position: absolute;
+    width: 710px;
+    height: 432px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    z-index: 3;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        border: 1px solid #e9edf3;
+    }
+
+    &__header-text {
+        margin-left: 50px;
+        font-family: Circular Std;
+        font-weight: 500;
+        font-size: 15px;
+        color: #292949;
+    }
+
+    &__close {
+        font-size: 1.5em;
+        line-height: 14px;
+        text-align: center;
+        transform: rotate(45deg);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: white;
+        margin-left: 471px;
+        color: #c6cad9;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__input-item {
+        width: 290px;
+        height: 42px;
+        border: 1px solid #e3e7ed;
+        border-radius: 4px;
+        font-family: Roboto;
+        font-size: 13px;
+        color: #b0b3c2;
+        margin-top: 45px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+    }
+
+    &__save-button {
+        background: #61dbb4;
+        width: 100%;
+        text-align: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 39px;
+        height: 50px;
+
+        font-family: Circular Std;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+    }
+}

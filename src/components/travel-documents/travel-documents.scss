@@ -1,0 +1,78 @@
+.travel-documents {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 35px;
+
+    &__item {
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid #e3e7ed;
+        width: 196px;
+        height: 100px;
+        line-height: 50px;
+    }
+
+    &__string {
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__flag {
+        width: 20px;
+        height: 12px;
+        margin-left: 25px;
+    }
+
+    &__country {
+        margin-left: 15px;
+    }
+
+    &__code {
+        margin-left: 25px;
+        font-family: Roboto;
+        font-size: 14px;
+        color: #7b819a;
+    }
+
+    &__date {
+        margin-left: 15px;
+        font-family: Roboto;
+        font-size: 12px;
+        color: #b0b3c2;
+    }
+
+    &__add-passport {
+        border-radius: 5px;
+        border: 1px dashed #d7d8e0;
+        width: 196px;
+        height: 100px;
+        background-color: white;
+    }
+
+    &__plus {
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        background-color: #d4dbe7;
+        border-radius: 30px;
+        color: white;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    &__text {
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+.add-passport-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

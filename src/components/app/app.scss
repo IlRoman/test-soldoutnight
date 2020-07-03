@@ -1,0 +1,79 @@
+.header {
+    height: 120px;
+}
+
+.footer {
+    height: 102px;
+}
+
+.main {
+    height: calc(100vh - 222px);
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+}
+
+.passport {
+    margin-top: 30px;
+    width: 410px;
+
+    &__image {
+        height: 555px;
+        background-color: white;
+    }
+
+    &__code {
+        margin-top: 20px;
+        background-color: white;
+        height: 161px;
+    }
+}
+
+.navigation-wrapper {
+    background-color: white;
+    width: 710px;
+    height: 262px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        width: 196px;
+        height: 71px;
+        text-align: center;
+        line-height: 71px;
+        border-bottom: 1px solid #e9edf3;
+    }
+}
+
+.active {
+    border-bottom: 2px solid #61dbb4;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-layer {
+    position: absolute;
+    z-index: 2;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
