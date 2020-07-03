@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Route, Link, useLocation } from 'react-router-dom';
 import './app.scss';
 import TravelDocuments from '../travel-documents/TravelDocuments'
@@ -12,21 +12,21 @@ const App = () => {
     return (
         <>
             {popupIsOpened &&
-                (<div className="wrapper">
+                <div className="popup-wrapper">
                     <div className="bg-layer"></div>
                     <Popup
                         setPopup={setPopup}
                     />
-                </div>)
+                </div>
             }
 
-            <header className={popupIsOpened ? 'header dark' : "header"}></header>
+            <header className="header"></header>
             <main className="main">
-                <div className={popupIsOpened ? 'passport passport-dark' : 'passport'}>
-                    <div className={popupIsOpened ? 'passport__image dark' : 'passport__image'}>
+                <div className="passport">
+                    <div className="passport__image">
 
                     </div>
-                    <div className={popupIsOpened ? 'passport__code dark' : 'passport__code'}>
+                    <div className="passport__code">
 
                     </div>
                 </div>
@@ -76,7 +76,7 @@ const App = () => {
                     </Route>
                 </div>
             </main>
-            <footer className={popupIsOpened ? 'footer dark' : "footer"}></footer>
+            <footer className="footer"></footer>
         </>
     )
 }
