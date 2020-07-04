@@ -3,7 +3,7 @@ import './popup.scss';
 
 const Popup = ({ setPopup }) => {
     return (
-        <div className="popup">
+        <form className="popup">
             <div className="popup__header">
                 <div className="popup__header-text">
                     Add new passport
@@ -35,11 +35,12 @@ const Popup = ({ setPopup }) => {
                 </div>
             </div>
             <button
+                type="submit"
                 className="popup__save-button"
                 onClick={() => setPopup(false)}
             > Save
             </button>
-        </div>
+        </form>
     )
 }
 

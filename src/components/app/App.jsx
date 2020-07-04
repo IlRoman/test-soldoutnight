@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Route, Link, useLocation, Redirect } from 'react-router-dom';
 import './app.scss';
-import TravelDocuments from '../travel-documents/TravelDocuments'
-import Popup from '../popup/Popup'
-import TravelPreferences from '../travel-preferences/TravelPreferences'
+import TravelDocuments from '../travel-documents/TravelDocuments';
+import Popup from '../popup/Popup';
+import TravelPreferences from '../travel-preferences/TravelPreferences';
 
 const App = () => {
     const [popupIsOpened, setPopup] = useState(false)
